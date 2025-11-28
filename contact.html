@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Malviya Community and join our network">
+    <title>Contact Us - Malviya Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="langBtn" onclick="toggleLanguage()">
+            <i class="fas fa-language"></i> <span id="langText">हिंदी</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-en="Malviya Community" data-hi="मालवीय समुदाय">Malviya Community</h1>
+                <p class="tagline" data-en="Roots in Malwa, Living Traditions in Rajasthan" data-hi="मालवा में जड़ें, राजस्थान में जीवित परंपराएं">Roots in Malwa, Living Traditions in Rajasthan</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="history.html" data-en="History & Origins" data-hi="इतिहास और उत्पत्ति">History & Origins</a></li>
+                <li><a href="rajasthan.html" data-en="Rajasthan Malviyas" data-hi="राजस्थान मालवीय">Rajasthan Malviyas</a></li>
+                <li><a href="culture.html" data-en="Culture & Traditions" data-hi="संस्कृति और परंपराएं">Culture & Traditions</a></li>
+                <li><a href="occupations.html" data-en="Occupations" data-hi="व्यवसाय">Occupations</a></li>
+                <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
+                <li><a href="contact.html" class="active" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Contact Us & Join" data-hi="हमसे संपर्क करें और शामिल हों">Contact Us & Join</h1>
+            <p data-en="Connect with the Malviya community and become part of our network" data-hi="मालवीय समुदाय से जुड़ें और हमारे नेटवर्क का हिस्सा बनें">Connect with the Malviya community and become part of our network</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-section">
+                    <h2 data-en="Get in Touch" data-hi="संपर्क में रहें">Get in Touch</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name *" data-hi="पूरा नाम *">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address *" data-hi="ईमेल पता *">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone Number" data-hi="फोन नंबर">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gotra" data-en="Gotra / Clan" data-hi="गोत्र / कुल">Gotra / Clan</label>
+                            <input type="text" id="gotra" name="gotra">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" data-en="City / Village, State" data-hi="शहर / गांव, राज्य">City / Village, State</label>
+                            <input type="text" id="location" name="location">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="purpose" data-en="Purpose of Contact *" data-hi="संपर्क का उद्देश्य *">Purpose of Contact *</label>
+                            <select id="purpose" name="purpose" required>
+                                <option value="" data-en="Select..." data-hi="चुनें...">Select...</option>
+                                <option value="membership" data-en="Join Community" data-hi="समुदाय में शामिल हों">Join Community</option>
+                                <option value="event" data-en="Event Information" data-hi="कार्यक्रम जानकारी">Event Information</option>
+                                <option value="inquiry" data-en="General Inquiry" data-hi="सामान्य पूछताछ">General Inquiry</option>
+                                <option value="feedback" data-en="Feedback / Suggestions" data-hi="प्रतिक्रिया / सुझाव">Feedback / Suggestions</option>
+                                <option value="other" data-en="Other" data-hi="अन्य">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-en="Message *" data-hi="संदेश *">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-large" data-en="Send Message" data-hi="संदेश भेजें">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2 data-en="Contact Information" data-hi="संपर्क जानकारी">Contact Information</h2>
+                    
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3 data-en="Email" data-hi="ईमेल">Email</h3>
+                        <p>info@malviya.org</p>
+                        <p>contact@malviya.org</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3 data-en="Phone" data-hi="फोन">Phone</h3>
+                        <p data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3 data-en="Address" data-hi="पता">Address</h3>
+                        <p data-en="Sabha offices across India" data-hi="पूरे भारत में सभा कार्यालय">Sabha offices across India</p>
+                        <p data-en="Contact for local chapter details" data-hi="स्थानीय अध्याय विवरण के लिए संपर्क करें">Contact for local chapter details</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-share-alt"></i>
+                        <h3 data-en="Social Media" data-hi="सोशल मीडिया">Social Media</h3>
+                        <div class="social-links-vertical">
+                            <a href="#"><i class="fab fa-facebook"></i> <span>Facebook</span></a>
+                            <a href="#"><i class="fab fa-youtube"></i> <span>YouTube</span></a>
+                            <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i> <span>WhatsApp Groups</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 data-en="Join the Malviya Samaj" data-hi="मालवीय समाज में शामिल हों">Join the Malviya Samaj</h2>
+            
+            <div class="content-card">
+                <h3 data-en="Benefits of Membership" data-hi="सदस्यता के लाभ">Benefits of Membership</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-users"></i>
+                        <h4 data-en="Community Network" data-hi="सामुदायिक नेटवर्क">Community Network</h4>
+                        <p data-en="Connect with Malviya families across India" data-hi="पूरे भारत में मालवीय परिवारों से जुड़ें">Connect with Malviya families across India</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4 data-en="Event Updates" data-hi="कार्यक्रम अपडेट">Event Updates</h4>
+                        <p data-en="Stay informed about community events and celebrations" data-hi="सामुदायिक कार्यक्रमों और उत्सवों के बारे में सूचित रहें">Stay informed about community events and celebrations</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4 data-en="Educational Support" data-hi="शैक्षिक सहायता">Educational Support</h4>
+                        <p data-en="Access scholarships and educational resources" data-hi="छात्रवृत्ति और शैक्षिक संसाधनों तक पहुंच">Access scholarships and educational resources</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4 data-en="Social Welfare" data-hi="सामाजिक कल्याण">Social Welfare</h4>
+                        <p data-en="Participate in community welfare programs" data-hi="सामुदायिक कल्याण कार्यक्रमों में भाग लें">Participate in community welfare programs</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <p data-en="Fill out the contact form above to register for membership" data-hi="सदस्यता के लिए पंजीकरण करने के लिए ऊपर दिया गया संपर्क फॉर्म भरें">Fill out the contact form above to register for membership</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="history.html" data-en="History" data-hi="इतिहास">History</a></li>
+                        <li><a href="rajasthan.html" data-en="Rajasthan" data-hi="राजस्थान">Rajasthan</a></li>
+                        <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Connect With Us" data-hi="हमसे जुड़ें">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malviya Community. <span data-en="All rights reserved." data-hi="सर्वाधिकार सुरक्षित।">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
+

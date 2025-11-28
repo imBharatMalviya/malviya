@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo and video gallery of Malviya community events">
+    <title>Gallery - Malviya Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="langBtn" onclick="toggleLanguage()">
+            <i class="fas fa-language"></i> <span id="langText">हिंदी</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-en="Malviya Community" data-hi="मालवीय समुदाय">Malviya Community</h1>
+                <p class="tagline" data-en="Roots in Malwa, Living Traditions in Rajasthan" data-hi="मालवा में जड़ें, राजस्थान में जीवित परंपराएं">Roots in Malwa, Living Traditions in Rajasthan</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="history.html" data-en="History & Origins" data-hi="इतिहास और उत्पत्ति">History & Origins</a></li>
+                <li><a href="rajasthan.html" data-en="Rajasthan Malviyas" data-hi="राजस्थान मालवीय">Rajasthan Malviyas</a></li>
+                <li><a href="culture.html" data-en="Culture & Traditions" data-hi="संस्कृति और परंपराएं">Culture & Traditions</a></li>
+                <li><a href="occupations.html" data-en="Occupations" data-hi="व्यवसाय">Occupations</a></li>
+                <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                <li><a href="gallery.html" class="active" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Photo & Video Gallery" data-hi="फोटो और वीडियो गैलरी">Photo & Video Gallery</h1>
+            <p data-en="Capturing moments from our community events and celebrations" data-hi="हमारे सामुदायिक कार्यक्रमों और उत्सवों के क्षणों को कैद करना">Capturing moments from our community events and celebrations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="content-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-hi="सभी">All</button>
+                <button class="filter-btn" data-filter="events" data-en="Events" data-hi="कार्यक्रम">Events</button>
+                <button class="filter-btn" data-filter="festivals" data-en="Festivals" data-hi="त्योहार">Festivals</button>
+                <button class="filter-btn" data-filter="weddings" data-en="Weddings" data-hi="शादियां">Weddings</button>
+                <button class="filter-btn" data-filter="cultural" data-en="Cultural" data-hi="सांस्कृतिक">Cultural</button>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="gallery-grid">
+                <!-- Placeholder for images - to be added by admin -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Community Event Photos" data-hi="सामुदायिक कार्यक्रम फोटो">Community Event Photos</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="festivals">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Festival Celebrations" data-hi="त्योहार समारोह">Festival Celebrations</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="weddings">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Mass Marriage Ceremonies" data-hi="सामूहिक विवाह समारोह">Mass Marriage Ceremonies</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cultural">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Cultural Programs" data-hi="सांस्कृतिक कार्यक्रम">Cultural Programs</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Sabha Meetings" data-hi="सभा बैठकें">Sabha Meetings</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="festivals">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-en="Malaviya Jayanti" data-hi="मालवीय जयंती">Malaviya Jayanti</p>
+                        <span data-en="Coming Soon" data-hi="जल्द आ रहा है">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 data-en="Video Gallery" data-hi="वीडियो गैलरी">Video Gallery</h2>
+            
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-video"></i>
+                        <p data-en="Event Highlights" data-hi="कार्यक्रम मुख्य बातें">Event Highlights</p>
+                        <span data-en="Videos Coming Soon" data-hi="वीडियो जल्द आ रहे हैं">Videos Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-video"></i>
+                        <p data-en="Cultural Performances" data-hi="सांस्कृतिक प्रदर्शन">Cultural Performances</p>
+                        <span data-en="Videos Coming Soon" data-hi="वीडियो जल्द आ रहे हैं">Videos Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-video"></i>
+                        <p data-en="Community Messages" data-hi="सामुदायिक संदेश">Community Messages</p>
+                        <span data-en="Videos Coming Soon" data-hi="वीडियो जल्द आ रहे हैं">Videos Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: 40px;">
+                <h3><i class="fas fa-youtube"></i> <span data-en="YouTube Channel" data-hi="यूट्यूब चैनल">YouTube Channel</span></h3>
+                <p data-en="Subscribe to our YouTube channel 'Shri Gaur Malviya Samaj' for more videos of community events, cultural programs, and important announcements." 
+                   data-hi="सामुदायिक कार्यक्रमों, सांस्कृतिक कार्यक्रमों और महत्वपूर्ण घोषणाओं के अधिक वीडियो के लिए हमारे यूट्यूब चैनल 'श्री गौर मालवीय समाज' को सब्सक्राइब करें।">
+                    Subscribe to our YouTube channel "Shri Gaur Malviya Samaj" for more videos of community events, cultural programs, and important announcements.
+                </p>
+                <a href="#" class="btn" data-en="Visit YouTube Channel" data-hi="यूट्यूब चैनल पर जाएं">Visit YouTube Channel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2><i class="fas fa-cloud-upload-alt"></i> <span data-en="Share Your Photos & Videos" data-hi="अपनी फोटो और वीडियो साझा करें">Share Your Photos & Videos</span></h2>
+                <p data-en="Have photos or videos from community events? We'd love to feature them in our gallery! Please contact us to share your memories." 
+                   data-hi="सामुदायिक कार्यक्रमों से फोटो या वीडियो हैं? हम उन्हें अपनी गैलरी में प्रदर्शित करना पसंद करेंगे! अपनी यादें साझा करने के लिए कृपया हमसे संपर्क करें।">
+                    Have photos or videos from community events? We'd love to feature them in our gallery! Please contact us to share your memories.
+                </p>
+                <a href="contact.html" class="btn" data-en="Contact Us" data-hi="हमसे संपर्क करें">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="history.html" data-en="History" data-hi="इतिहास">History</a></li>
+                        <li><a href="rajasthan.html" data-en="Rajasthan" data-hi="राजस्थान">Rajasthan</a></li>
+                        <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Connect With Us" data-hi="हमसे जुड़ें">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malviya Community. <span data-en="All rights reserved." data-hi="सर्वाधिकार सुरक्षित।">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
+

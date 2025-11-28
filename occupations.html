@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Traditional occupations and social status of Malviya communities">
+    <title>Occupations & Social Status - Malviya Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="langBtn" onclick="toggleLanguage()">
+            <i class="fas fa-language"></i> <span id="langText">हिंदी</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-en="Malviya Community" data-hi="मालवीय समुदाय">Malviya Community</h1>
+                <p class="tagline" data-en="Roots in Malwa, Living Traditions in Rajasthan" data-hi="मालवा में जड़ें, राजस्थान में जीवित परंपराएं">Roots in Malwa, Living Traditions in Rajasthan</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="history.html" data-en="History & Origins" data-hi="इतिहास और उत्पत्ति">History & Origins</a></li>
+                <li><a href="rajasthan.html" data-en="Rajasthan Malviyas" data-hi="राजस्थान मालवीय">Rajasthan Malviyas</a></li>
+                <li><a href="culture.html" data-en="Culture & Traditions" data-hi="संस्कृति और परंपराएं">Culture & Traditions</a></li>
+                <li><a href="occupations.html" class="active" data-en="Occupations" data-hi="व्यवसाय">Occupations</a></li>
+                <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Occupations & Social Status" data-hi="व्यवसाय और सामाजिक स्थिति">Occupations & Social Status</h1>
+            <p data-en="Understanding traditional roles and contemporary contributions" data-hi="पारंपरिक भूमिकाओं और समकालीन योगदान को समझना">Understanding traditional roles and contemporary contributions</p>
+        </div>
+    </section>
+
+    <!-- Brahmin Malviyas -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2><i class="fas fa-book-reader"></i> <span data-en="Brahmin Malviyas" data-hi="ब्राह्मण मालवीय">Brahmin Malviyas</span></h2>
+                <p data-en="Malviya Brahmins belong to the Gaud (Gaur) Brahmin community, one of the five major Brahmin groups (Panch Gauda) of northern India. Historically, they have held important roles in society as priests, scholars, and educators." 
+                   data-hi="मालवीय ब्राह्मण गौड़ (गौर) ब्राह्मण समुदाय से संबंधित हैं, जो उत्तरी भारत के पांच प्रमुख ब्राह्मण समूहों (पंच गौड़) में से एक है। ऐतिहासिक रूप से, उन्होंने पुजारियों, विद्वानों और शिक्षकों के रूप में समाज में महत्वपूर्ण भूमिकाएं निभाई हैं।">
+                    Malviya Brahmins belong to the Gaud (Gaur) Brahmin community, one of the five major Brahmin groups (Panch Gauda) of northern India. Historically, they have held important roles in society as priests, scholars, and educators.
+                </p>
+                
+                <div class="info-box">
+                    <h3 data-en="Traditional Occupations:" data-hi="पारंपरिक व्यवसाय:">Traditional Occupations:</h3>
+                    <ul>
+                        <li data-en="Priesthood and religious ceremonies" data-hi="पुरोहिती और धार्मिक समारोह">Priesthood and religious ceremonies</li>
+                        <li data-en="Vedic scholarship and Sanskrit learning" data-hi="वैदिक छात्रवृत्ति और संस्कृत सीखना">Vedic scholarship and Sanskrit learning</li>
+                        <li data-en="Teaching and education" data-hi="शिक्षण और शिक्षा">Teaching and education</li>
+                        <li data-en="Astrology and religious counseling" data-hi="ज्योतिष और धार्मिक परामर्श">Astrology and religious counseling</li>
+                        <li data-en="Administrative and advisory roles in kingdoms" data-hi="राज्यों में प्रशासनिक और सलाहकार भूमिकाएं">Administrative and advisory roles in kingdoms</li>
+                    </ul>
+                </div>
+                
+                <h3 data-en="Social Status" data-hi="सामाजिक स्थिति">Social Status</h3>
+                <p data-en="Gaud Malviyas are classified as an upper-caste community within the traditional Hindu social hierarchy. They are considered part of the General category in most states, though some regions may classify them under Other Backward Classes (OBC) depending on local census classifications." 
+                   data-hi="गौड़ मालवीय पारंपरिक हिंदू सामाजिक पदानुक्रम के भीतर एक उच्च-जाति समुदाय के रूप में वर्गीकृत हैं। उन्हें अधिकांश राज्यों में सामान्य श्रेणी का हिस्सा माना जाता है, हालांकि कुछ क्षेत्र स्थानीय जनगणना वर्गीकरण के आधार पर उन्हें अन्य पिछड़ा वर्ग (ओबीसी) के तहत वर्गीकृत कर सकते हैं।">
+                    Gaud Malviyas are classified as an upper-caste community within the traditional Hindu social hierarchy. They are considered part of the General category in most states, though some regions may classify them under Other Backward Classes (OBC) depending on local census classifications.
+                </p>
+                
+                <div class="citation">
+                    <i class="fas fa-quote-left"></i>
+                    <span data-en="Source: Grokipedia - Malviya families typically upheld priestly duties and are considered upper caste" data-hi="स्रोत: ग्रोकिपीडिया - मालवीय परिवारों ने आमतौर पर पुरोहिती कर्तव्यों को बनाए रखा और उच्च जाति माना जाता है">Source: Grokipedia - Malviya families typically upheld priestly duties and are considered upper caste</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Communities -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 data-en="Other Malviya Communities" data-hi="अन्य मालवीय समुदाय">Other Malviya Communities</h2>
+            
+            <div class="content-card">
+                <h3><i class="fas fa-tractor"></i> <span data-en="Jat Malviyas" data-hi="जाट मालवीय">Jat Malviyas</span></h3>
+                <p data-en="Jat Malviyas are primarily an agricultural community. They are classified as Kshatriya (warrior/landowning caste) in the traditional varna system and are typically categorized as OBC in modern administrative classifications." 
+                   data-hi="जाट मालवीय मुख्य रूप से एक कृषि समुदाय हैं। उन्हें पारंपरिक वर्ण प्रणाली में क्षत्रिय (योद्धा/भूस्वामी जाति) के रूप में वर्गीकृत किया गया है और आमतौर पर आधुनिक प्रशासनिक वर्गीकरण में ओबीसी के रूप में वर्गीकृत किया जाता है।">
+                    Jat Malviyas are primarily an agricultural community. They are classified as Kshatriya (warrior/landowning caste) in the traditional varna system and are typically categorized as OBC in modern administrative classifications.
+                </p>
+                
+                <div class="info-box">
+                    <h4 data-en="Traditional Occupations:" data-hi="पारंपरिक व्यवसाय:">Traditional Occupations:</h4>
+                    <ul>
+                        <li data-en="Agriculture and farming" data-hi="कृषि और खेती">Agriculture and farming</li>
+                        <li data-en="Land ownership and management" data-hi="भूमि स्वामित्व और प्रबंधन">Land ownership and management</li>
+                        <li data-en="Animal husbandry" data-hi="पशुपालन">Animal husbandry</li>
+                        <li data-en="Village leadership roles" data-hi="गांव नेतृत्व भूमिकाएं">Village leadership roles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3><i class="fas fa-cut"></i> <span data-en="Nai/Napit Malviyas" data-hi="नाई/नापित मालवीय">Nai/Napit Malviyas</span></h3>
+                <p data-en="The Nai or Napit (barber) community with the Malviya surname are traditional service providers. Historically, they have been viewed as a lower caste due to their occupation, though they play important ceremonial roles in community life." 
+                   data-hi="मालवीय उपनाम वाले नाई या नापित (नाई) समुदाय पारंपरिक सेवा प्रदाता हैं। ऐतिहासिक रूप से, उन्हें उनके व्यवसाय के कारण निम्न जाति के रूप में देखा गया है, हालांकि वे सामुदायिक जीवन में महत्वपूर्ण औपचारिक भूमिकाएं निभाते हैं।">
+                    The Nai or Napit (barber) community with the Malviya surname are traditional service providers. Historically, they have been viewed as a lower caste due to their occupation, though they play important ceremonial roles in community life.
+                </p>
+                
+                <div class="citation">
+                    <i class="fas fa-quote-left"></i>
+                    <span data-en="Source: Nai are barbers, viewed as low caste due to occupation" data-hi="स्रोत: नाई नाई हैं, व्यवसाय के कारण निम्न जाति के रूप में देखे जाते हैं">Source: Nai are barbers, viewed as low caste due to occupation</span>
+                </div>
+                
+                <div class="info-box">
+                    <h4 data-en="Traditional Occupations:" data-hi="पारंपरिक व्यवसाय:">Traditional Occupations:</h4>
+                    <ul>
+                        <li data-en="Hair cutting and grooming services" data-hi="बाल काटने और सौंदर्य सेवाएं">Hair cutting and grooming services</li>
+                        <li data-en="Ceremonial roles in weddings and births" data-hi="शादियों और जन्मों में औपचारिक भूमिकाएं">Ceremonial roles in weddings and births</li>
+                        <li data-en="Messengers for family events" data-hi="पारिवारिक कार्यक्रमों के लिए संदेशवाहक">Messengers for family events</li>
+                        <li data-en="Traditional healing practices" data-hi="पारंपरिक उपचार प्रथाएं">Traditional healing practices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3><i class="fas fa-tools"></i> <span data-en="Artisan Communities" data-hi="कारीगर समुदाय">Artisan Communities</span></h3>
+                <p data-en="Malviya Balai and other artisan communities are classified as Scheduled Castes. They have traditionally been involved in various craft and artisan work, and maintain strong community organizations for social and economic advancement." 
+                   data-hi="मालवीय बलाई और अन्य कारीगर समुदायों को अनुसूचित जाति के रूप में वर्गीकृत किया गया है। वे पारंपरिक रूप से विभिन्न शिल्प और कारीगर कार्यों में शामिल रहे हैं, और सामाजिक और आर्थिक उन्नति के लिए मजबूत सामुदायिक संगठनों को बनाए रखते हैं।">
+                    Malviya Balai and other artisan communities are classified as Scheduled Castes. They have traditionally been involved in various craft and artisan work, and maintain strong community organizations for social and economic advancement.
+                </p>
+                
+                <div class="info-box">
+                    <h4 data-en="Traditional Occupations:" data-hi="पारंपरिक व्यवसाय:">Traditional Occupations:</h4>
+                    <ul>
+                        <li data-en="Weaving and textile work" data-hi="बुनाई और कपड़ा कार्य">Weaving and textile work</li>
+                        <li data-en="Carpentry and woodwork" data-hi="बढ़ईगीरी और लकड़ी का काम">Carpentry and woodwork</li>
+                        <li data-en="Various artisan crafts" data-hi="विभिन्न कारीगर शिल्प">Various artisan crafts</li>
+                        <li data-en="Agricultural labor" data-hi="कृषि श्रम">Agricultural labor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contemporary Occupations -->
+    <section class="content-section">
+        <div class="container">
+            <h2 data-en="Contemporary Occupations" data-hi="समकालीन व्यवसाय">Contemporary Occupations</h2>
+            
+            <div class="content-card">
+                <p data-en="In modern times, Malviyas from all communities have diversified into various professional fields, moving beyond traditional occupations. Education and economic development have opened new opportunities across all sections of the community." 
+                   data-hi="आधुनिक समय में, सभी समुदायों के मालवीय विभिन्न पेशेवर क्षेत्रों में विविधता लाए हैं, पारंपरिक व्यवसायों से आगे बढ़ रहे हैं। शिक्षा और आर्थिक विकास ने समुदाय के सभी वर्गों में नए अवसर खोले हैं।">
+                    In modern times, Malviyas from all communities have diversified into various professional fields, moving beyond traditional occupations. Education and economic development have opened new opportunities across all sections of the community.
+                </p>
+            </div>
+            
+            <div class="notable-grid">
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-en="Education" data-hi="शिक्षा">Education</h3>
+                    <p data-en="Teachers, professors, school administrators, and educational consultants across all levels of education." 
+                       data-hi="शिक्षा के सभी स्तरों पर शिक्षक, प्रोफेसर, स्कूल प्रशासक और शैक्षिक सलाहकार।">
+                        Teachers, professors, school administrators, and educational consultants across all levels of education.
+                    </p>
+                </div>
+
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-en="Business" data-hi="व्यवसाय">Business</h3>
+                    <p data-en="Entrepreneurs, traders, shop owners, and business professionals in various sectors including retail, manufacturing, and services." 
+                       data-hi="खुदरा, विनिर्माण और सेवाओं सहित विभिन्न क्षेत्रों में उद्यमी, व्यापारी, दुकान मालिक और व्यापार पेशेवर।">
+                        Entrepreneurs, traders, shop owners, and business professionals in various sectors including retail, manufacturing, and services.
+                    </p>
+                </div>
+
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-en="Technology" data-hi="प्रौद्योगिकी">Technology</h3>
+                    <p data-en="Software engineers, IT professionals, and technology entrepreneurs contributing to India's growing tech sector." 
+                       data-hi="सॉफ्टवेयर इंजीनियर, आईटी पेशेवर और प्रौद्योगिकी उद्यमी भारत के बढ़ते तकनीकी क्षेत्र में योगदान दे रहे हैं।">
+                        Software engineers, IT professionals, and technology entrepreneurs contributing to India's growing tech sector.
+                    </p>
+                </div>
+
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 data-en="Government Service" data-hi="सरकारी सेवा">Government Service</h3>
+                    <p data-en="Civil servants, police officers, teachers in government schools, and employees in various government departments." 
+                       data-hi="सिविल सेवक, पुलिस अधिकारी, सरकारी स्कूलों में शिक्षक और विभिन्न सरकारी विभागों में कर्मचारी।">
+                        Civil servants, police officers, teachers in government schools, and employees in various government departments.
+                    </p>
+                </div>
+
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 data-en="Healthcare" data-hi="स्वास्थ्य सेवा">Healthcare</h3>
+                    <p data-en="Doctors, nurses, pharmacists, and healthcare administrators serving communities across India." 
+                       data-hi="डॉक्टर, नर्स, फार्मासिस्ट और स्वास्थ्य सेवा प्रशासक पूरे भारत में समुदायों की सेवा कर रहे हैं।">
+                        Doctors, nurses, pharmacists, and healthcare administrators serving communities across India.
+                    </p>
+                </div>
+
+                <div class="notable-card">
+                    <div class="notable-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-en="Legal & Finance" data-hi="कानूनी और वित्त">Legal & Finance</h3>
+                    <p data-en="Lawyers, chartered accountants, bankers, and financial advisors in both public and private sectors." 
+                       data-hi="सार्वजनिक और निजी दोनों क्षेत्रों में वकील, चार्टर्ड अकाउंटेंट, बैंकर और वित्तीय सलाहकार।">
+                        Lawyers, chartered accountants, bankers, and financial advisors in both public and private sectors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="history.html" data-en="History" data-hi="इतिहास">History</a></li>
+                        <li><a href="rajasthan.html" data-en="Rajasthan" data-hi="राजस्थान">Rajasthan</a></li>
+                        <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Connect With Us" data-hi="हमसे जुड़ें">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malviya Community. <span data-en="All rights reserved." data-hi="सर्वाधिकार सुरक्षित।">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
