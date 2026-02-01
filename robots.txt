@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://malviya.org/sitemap.xml
+
+# Disallow admin or private directories (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all CSS, JS, and images
+Allow: /css/
+Allow: /js/
+Allow: /images/
+

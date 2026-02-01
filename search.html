@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Malviya Community</title>
+    <meta name="description" content="Search the Malviya Community website for information about history, culture, events, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Search-specific styles */
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .search-box-large {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search-box-large input {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box-large input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .search-box-large button {
+            padding: 15px 30px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-box-large button:hover {
+            background: var(--secondary-color);
+        }
+
+        .search-stats {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .search-results {
+            display: grid;
+            gap: 20px;
+        }
+
+        .search-result-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .search-result-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .result-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--accent-color);
+            color: var(--secondary-color);
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .search-result-card h3 {
+            margin: 10px 0;
+            color: var(--secondary-color);
+        }
+
+        .search-result-card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .search-result-card h3 a:hover {
+            color: var(--primary-color);
+        }
+
+        .search-result-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .result-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .result-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .no-results i {
+            font-size: 64px;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .no-results h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .no-results .quick-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .popular-searches {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .popular-searches h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .search-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .search-tag {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .search-tag:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-530CFD0CWT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-530CFD0CWT');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-om"></i>
+                        <span data-en="Malviya Community" data-hi="मालवीय समुदाय">Malviya Community</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                    <li><a href="history.html" data-en="History" data-hi="इतिहास">History</a></li>
+                    <li><a href="rajasthan.html" data-en="Rajasthan" data-hi="राजस्थान">Rajasthan</a></li>
+                    <li><a href="culture.html" data-en="Culture" data-hi="संस्कृति">Culture</a></li>
+                    <li><a href="occupations.html" data-en="Occupations" data-hi="व्यवसाय">Occupations</a></li>
+                    <li><a href="community.html" data-en="Community" data-hi="समुदाय">Community</a></li>
+                    <li><a href="gallery.html" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
+                    <li><a href="news.html" data-en="News" data-hi="समाचार">News</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+                    <li><a href="search.html" class="active" data-en="Search" data-hi="खोजें">Search</a></li>
+                    <li><button id="lang-toggle" class="lang-btn" aria-label="Toggle language">हिं</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-small">
+        <div class="container">
+            <h1 data-en="Search" data-hi="खोजें">Search</h1>
+            <p data-en="Find information across the Malviya Community website" 
+               data-hi="मालवीय समुदाय वेबसाइट पर जानकारी खोजें">
+                Find information across the Malviya Community website
+            </p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box-large">
+                    <input type="text" id="searchInput" placeholder="Search for history, culture, events, people..." 
+                           data-en-placeholder="Search for history, culture, events, people..."
+                           data-hi-placeholder="इतिहास, संस्कृति, कार्यक्रम, लोगों के लिए खोजें...">
+                    <button id="searchButton" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div id="searchStats" class="search-stats" style="display: none;">
+                    <p><span id="resultCount">0</span> <span data-en="results found" data-hi="परिणाम मिले">results found</span></p>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div id="searchResults" class="search-results">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3 data-en="No results found" data-hi="कोई परिणाम नहीं मिला">No results found</h3>
+                <p data-en="Try different keywords or browse our pages:" 
+                   data-hi="विभिन्न कीवर्ड आज़माएं या हमारे पेज ब्राउज़ करें:">
+                    Try different keywords or browse our pages:
+                </p>
+                <div class="quick-links">
+                    <a href="history.html" class="btn-secondary">History</a>
+                    <a href="culture.html" class="btn-secondary">Culture</a>
+                    <a href="news.html" class="btn-secondary">News</a>
+                    <a href="gallery.html" class="btn-secondary">Gallery</a>
+                </div>
+            </div>
+
+            <!-- Popular Searches -->
+            <div class="popular-searches">
+                <h3 data-en="Popular Searches" data-hi="लोकप्रिय खोजें">Popular Searches</h3>
+                <div class="search-tags">
+                    <button class="search-tag" data-query="Madan Mohan Malaviya">Madan Mohan Malaviya</button>
+                    <button class="search-tag" data-query="BHU">BHU</button>
+                    <button class="search-tag" data-query="Malaviya Jayanti">Malaviya Jayanti</button>
+                    <button class="search-tag" data-query="Gotra">Gotra</button>
+                    <button class="search-tag" data-query="Kuldevi">Kuldevi</button>
+                    <button class="search-tag" data-query="Marriage">Marriage Customs</button>
+                    <button class="search-tag" data-query="MNIT Jaipur">MNIT Jaipur</button>
+                    <button class="search-tag" data-query="Rajasthan">Rajasthan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="About" data-hi="के बारे में">About</h3>
+                    <p data-en="Preserving and celebrating the rich heritage of the Malviya community."
+                       data-hi="मालवीय समुदाय की समृद्ध विरासत को संरक्षित और मनाना।">
+                        Preserving and celebrating the rich heritage of the Malviya community.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="history.html" data-en="History" data-hi="इतिहास">History</a></li>
+                        <li><a href="culture.html" data-en="Culture" data-hi="संस्कृति">Culture</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Connect" data-hi="जुड़ें">Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malviya Community. <span data-en="All rights reserved." data-hi="सर्वाधिकार सुरक्षित।">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
+
